@@ -39,18 +39,19 @@
                 <h3 class="currentValue">Current Value</h3>
                 <h3 class="real_time_price">&#8377 24882</h3>
             </div>
-            <select name="current value" id="currentChain" class="currentChain">
+            <select name="current value" id="dropDownList" class="dropDownList">
                 <img src="images/Ethereum.png"></img>
                 <option value="ethereum">Ethereum</option>
             </select>
-            <div class="investAmountDiv">
+            <div class="inputDiv">
                 <p>Amount you want to invest</p>
+                <label data-domain="INR">
                 <input type="number" placeholder="0.00">
-                <div>INR</div>
+                </label>
             </div>
-            <div class="investAmountDiv">
+            <div class="inputDiv">
                 <p>Estimate Number of ETH You will Get</p>
-                <input type="number">0.00
+                <input type="number" class="investAmountInput" placeholder="0.00">
             </div>
             <button class="buyBtn">Buy</button>
         </div>
