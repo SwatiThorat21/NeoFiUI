@@ -17,45 +17,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            NeoFi
-        </div>
-        <div class="menu">
-            <li>Trade</li>
-            <li>Earn</li>
-            <li>Support</li>
-            <li>About</li>
-        </div>
-        <button>Connect Wallet</button>
-    </nav>
-    <main>
-        <img src="images/Ethereum.png" class="ethereumImg"></img>
-        <div class="card">
-            <div class="heading">
-                <h3 class="currentValue">Current Value</h3>
-                <h3 class="real_time_price">&#8377 24882</h3>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                NeoFi
             </div>
-            <select name="current value" id="dropDownList" class="dropDownList">
-                <img src="images/Ethereum.png"></img>
-                <option value="ethereum">Ethereum</option>
-            </select>
-            <div class="inputDiv">
-                <p>Amount you want to invest</p>
-                <label data-domain="INR">
-                <input type="number" placeholder="0.00">
-                </label>
+            <div class="menu">
+                <li>Trade</li>
+                <li>Earn</li>
+                <li>Support</li>
+                <li>About</li>
             </div>
-            <div class="inputDiv">
-                <p>Estimate Number of ETH You will Get</p>
-                <input type="number" class="investAmountInput" placeholder="0.00">
+            <button>Connect Wallet</button>
+        </nav>
+        <main>
+            <div class="imageDiv">
+                <img src="images/Ethereum.png" class="ethereumImg"></img>
             </div>
-            <button class="buyBtn">Buy</button>
-        </div>
-    </main>
+            <div class="card">
+                <span class="circle"></span>
+                <div class="heading">
+                    <h3 class="currentValue">Current Value</h3>
+                    <h3 class="real_time_price">&#8377 24882</h3>
+                </div>
+                <div name="current value" id="dropDownList" class="dropDownList">
+                    <img src="images/Ethereum.png" alt="Ethereum" class="dropDownImg1">
+                    <h3>Ethereum</h3>
+                    <i class="fa-solid fa-sort-down" style="color: #6e56f8;"></i>
+                </div>
+                <div class="inputDiv">
+                    <p>Amount you want to invest</p>
+                    <label data-domain="INR">
+                        <input type="number" placeholder="0.00">
+                    </label>
+                </div>
+                <div class="inputDiv">
+                    <p>Estimate Number of ETH You will Get</p>
+                    <input type="number" class="investAmountInput" placeholder="0.00">
+                </div>
+                <button class="buyBtn">Buy</button>
+            </div>
+        </main>
+    </div>
 
 </body>
 
