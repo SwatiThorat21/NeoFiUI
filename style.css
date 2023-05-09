@@ -33,6 +33,7 @@ nav li {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   color: #5a5a5a;
+  margin-left: 5rem;
 }
 .menu li:hover {
   color: #627eea;
@@ -48,7 +49,7 @@ nav li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
-}
+ } 
 
 .navbar button {
   width: 140px;
@@ -66,17 +67,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 91vh;
-  position: relative;
+  /* height: 91vh; */
 }
 .card {
   padding: 0 39px 35px 39px;
-  /* /* position: relative; */
   filter: drop-shadow(0 0 4px rgb(70, 66, 94));
   box-sizing: border-box;
   background: #0b0819;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   border-radius: 18px;
+  position: relative;
+  margin: 88px 0;
 }
 
 .heading {
@@ -127,8 +128,8 @@ main {
   justify-content: center;
   background-color: #1c1731;
   position: absolute;
-  top: 67px;
-  left: 548px;
+  top: -20px;
+  left: 200px;
   z-index: 1;
 }
 .inputDiv p {
