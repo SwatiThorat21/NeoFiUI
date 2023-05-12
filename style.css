@@ -19,7 +19,7 @@ nav {
   padding: 0 6rem 0 2rem;
 }
 
-nav li {
+.nav_li {
   list-style: none;
   padding: 10px;
 }
@@ -35,21 +35,17 @@ nav li {
   color: #5a5a5a;
   margin-left: 5rem;
 }
-.menu li:hover {
+.nav_li:hover {
   color: #627eea;
   border-bottom: 2px solid #627eea;
   margin-bottom: -13px;
-
   cursor: pointer;
 }
 .logo {
-  font-size: 22px;
-  font-weight: 800;
-  background: linear-gradient(45deg, #3387d5 40%, #5942cf, #7a06c9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Poppins", sans-serif;
- } 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .navbar button {
   width: 140px;
@@ -110,15 +106,17 @@ main {
   color: white;
   padding-left: 20px;
 }
-.dropDownList{
+.dropDownList {
   display: flex;
   align-items: center;
   padding: 0.45rem;
+  cursor: pointer;
 }
 .ethereumImg {
-  width: 85px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   position: absolute;
+  top: 6px;
 }
 .imageDiv {
   width: 70px;
@@ -129,7 +127,7 @@ main {
   background-color: #1c1731;
   position: absolute;
   top: -20px;
-  left: 200px;
+  left: 198px;
   z-index: 1;
 }
 .inputDiv p {
@@ -137,7 +135,7 @@ main {
   font-family: "Poppins", sans-serif;
   align-items: left;
 }
-input {
+.inputNumber {
   width: 390px;
   height: 60px;
   border-radius: 10px;
@@ -148,12 +146,11 @@ input {
   background: #0b0819;
   padding-left: 20px;
 }
-input:focus,
-select:focus {
+.inputNumber:focus {
   outline: none;
 }
 label,
-input {
+.inputNumber {
   position: relative;
   display: block;
   width: 390px;
@@ -211,15 +208,88 @@ input::placeholder {
   position: absolute;
   filter: drop-shadow(0 0 4px rgb(70, 66, 94));
 }
-.dropDownImg1{
-  width: 45px;
-  height: 34px;
+.dropDownImg1 {
+  width: 25px;
+  height: 25px;
+  padding-left: 8px;
 }
-.fa-sort-down{
+.fa-sort-down {
   font-size: 20px;
   margin-left: 225px;
   margin-bottom: 10px;
 }
-.dropDownList h3{
+.dropDownList h3 {
   font-weight: 200;
+  padding-left: 8px;
 }
+
+.card2 {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #181627;
+  padding-top: 1rem;
+  border-radius: 22px;
+  filter: drop-shadow(0 0 5px rgb(70, 66, 94));
+}
+
+.xmark {
+  margin-left: 362px;
+  cursor: pointer;
+}
+.searchbarInput {
+  position: relative;
+  padding: 0.8rem 7rem 0.8rem 3rem;
+  border: 1px solid rgba(110, 86, 248, 0.25);
+  background-color: #181627;
+  outline: none;
+  border-radius: 30px;
+  color: white;
+}
+input[type=text]::placeholder {
+  color: #d2d2d2;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.magnifyingGlass_img {
+  position: absolute;
+  left: 75px;
+  z-index: 1;
+  top: 71px;
+  color: #d2d2d2;
+  font-size: 20px;
+}
+.icons {
+  list-style: none;
+  margin: 0.3rem 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 13rem 0.5rem 0.8rem;
+  border: none;
+  border-radius: 2px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+.icons:hover {
+  background-color: #1b192d;
+}
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.9rem 1rem 1rem 0.5rem;
+}
+.searchContainer {
+  margin-left: 2rem;
+}
+
+.chainNames {
+  padding-left: 12px;
+}
+
+/* .container2{
+  display: none;
+} */

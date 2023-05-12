@@ -17,27 +17,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="container">
         <nav class="navbar">
             <div class="logo">
-                <img src="logo.svg" alt="NeoFi">
+                <img src="images/logo.svg" alt="NeoFi">
+                <img src="images/NeoFi.png" alt="logo">
             </div>
             <div class="menu">
-                <li>Trade</li>
-                <li>Earn</li>
-                <li>Support</li>
-                <li>About</li>
+                <li class="nav_li">Trade</li>
+                <li class="nav_li">Earn</li>
+                <li class="nav_li">Support</li>
+                <li class="nav_li">About</li>
             </div>
             <button>Connect Wallet</button>
         </nav>
         <main>
             <div class="card">
                 <div class="imageDiv">
-                    <img src="images/Ethereum.png" class="ethereumImg"></img>
+                    <img src="images/Ethereum_main_page.png" class="ethereumImg"></img>
                 </div>
                 <span class="circle"></span>
                 <div class="heading">
@@ -52,18 +55,38 @@
                 <div class="inputDiv">
                     <p>Amount you want to invest</p>
                     <label data-domain="INR">
-                        <input type="number" placeholder="0.00">
+                        <input class="inputNumber" placeholder="0.00">
                     </label>
                 </div>
                 <div class="inputDiv">
                     <p>Estimate Number of ETH You will Get</p>
-                    <input type="number" class="investAmountInput" placeholder="0.00">
+                    <input type="number" class="investAmountInput inputNumber" placeholder="0.00">
                 </div>
                 <button class="buyBtn">Buy</button>
             </div>
         </main>
     </div>
-
+    <div class="container2">
+        <div class="card2">
+            <img src="images/xmark.png" alt="xmark" class="xmark">
+                <div class="listContainer">
+                <div class="searchContainer">
+                  <img src="images/search.png" alt="search" class="magnifyingGlass_img">
+                    <input type="text" class="searchbarInput" placeholder="Search chains">
+                </div>
+                <ul>
+                    <li class="icons"><img src="images/Ethereum.png" class="list_icon"><span class="chainNames">Ethereum</span></li>
+                    <li class="icons"><img src="images/bitcoin-48.png" class="list_icon"><span class="chainNames">Bitcoin</span></li>
+                    <li class="icons"><img src="images/MATIC Icon.png" class="list_icon"><span class="chainNames">Matic</span></li>
+                    <li class="icons"><img src="images/binance.png" class="list_icon"><span class="chainNames">Bianance</span></li>
+                    <li class="icons"><img src="images/xrp-logo.png" class="list_icon"><span class="chainNames">XRP</span></li>
+                    <li class="icons"><img src="images/Solana-logo.png" class="list_icon"><span class="chainNames">Solana</span></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+   
 </body>
 
 </html>
